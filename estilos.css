@@ -1,8 +1,11 @@
+/* Modificador universal */
 *{
     margin: 0px;
     padding: 0px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+/* css universales para las 3 paginas */
 
 body{
     background: linear-gradient(
@@ -60,19 +63,22 @@ h1{
     justify-content: center;
 }
 
-h2{
+footer{
+    height: 200px;
+    background-color: #785d56;
     display: flex;
-    text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    list-style-type: none;
+    color: beige;
 }
 
-.Parrafo1{
-    display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 12px;
+.link-footer{
+    color: beige;
+    text-decoration: none;
 }
+
+/* modificaciones particulares de la pagina INDEX.HTML */
 
 .botones{
     display: flex;
@@ -126,6 +132,22 @@ h2{
     transition: transform .3s;
 }
 
+/* modificaciones particulares de la pagina CONSEJOS.HTML */
+
+h2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.Parrafo1{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 12px;
+}
+
 .consejos{
     margin: 20px;
 }
@@ -133,6 +155,8 @@ h2{
 .parrafo-prueba{
     margin-bottom: 200px;
 }
+
+/* modificaciones particulares de la pagina CONTACTO.HTML */
 
 .contacto{
     display: flex;
@@ -155,21 +179,4 @@ form{
     grid-template-columns: repeat(2,1fr);
     grid-gap: 50px;
     margin-top: 90px;
-}
-
-
-
-footer{
-    height: 200px;
-    background-color: #785d56;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    list-style-type: none;
-    color: beige;
-}
-
-.link-footer{
-    color: beige;
-    text-decoration: none;
 }
