@@ -5,6 +5,47 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+td{
+    align-items: center;
+    -ms-grid-row-span: 5;
+}
+
+/* Estilos del Popup*/
+
+.popup{
+    
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-contenido{
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.cerrar{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrar:hover,.cerrar:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* css universales para las 3 paginas */
 
 body{
@@ -12,6 +53,17 @@ body{
         #FCF4ED,
         #785d56
     );
+}
+
+/* Estilos del login*/
+
+
+.bodyLogin{
+    background: linear-gradient(
+        #FCF4ED,
+        #785d56
+    );
+    height: 100vh;
 }
 
 header{
@@ -79,6 +131,32 @@ footer{
 }
 
 /* modificaciones particulares de la pagina INDEX.HTML */
+
+.container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+#valor{
+    font-size: 5em;
+}
+
+.boton{
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5cm;
+    background-color: #be4c54;
+    color: beige;
+    margin-left: 20px;
+}
+
 
 .botones{
     display: flex;
@@ -156,6 +234,21 @@ h2{
     margin-bottom: 200px;
 }
 
+.contador-de-fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+.boton-contador{
+    padding: 5px;
+    border-radius: 5cm;
+    background-color: #be4c54;
+    color: beige;
+}
+
 /* modificaciones particulares de la pagina CONTACTO.HTML */
 
 .contacto{
@@ -179,4 +272,42 @@ form{
     grid-template-columns: repeat(2,1fr);
     grid-gap: 50px;
     margin-top: 90px;
+}
+
+/* Estilos de la pagina Login */
+
+.loginContenedor{
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tablaLogin{
+    border: 2px, solid, #be4c54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100%;
+}
+
+
+label{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+}
+
+.inputLogin{
+    padding: 8px 10px;
+    border-radius: 5px;
+
+}
+
+.buttonLogin{
+    padding: 8 10px;
+    border: solid;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
 }
